@@ -53,27 +53,27 @@ int main() {
     // strRev(str);
 
 
-    string str;
-    cout << "Enter the string : ";
-    cin >> str;
+    // string str;
+    // cout << "Enter the string : ";
+    // cin >> str;
 
 
 
-    int s = 0;
-    int e = str.size()-1;
+    // int s = 0;
+    // int e = str.size()-1;
 
-    // bool isPalindrome = 
+    // // bool isPalindrome = 
 
-    while(s < e){
-        if(str[s] != str[e]){
-            cout << "Non-palindrome";
-        }
-        else{
-            cout << "palindrome";
-        }
-        s++;
-        e--;
-    }
+    // while(s < e){
+    //     if(str[s] != str[e]){
+    //         cout << "Non-palindrome";
+    //     }
+    //     else{
+    //         cout << "palindrome";
+    //     }
+    //     s++;
+    //     e--;
+    // }
 
 
     // string ans = "";
@@ -89,6 +89,36 @@ int main() {
     // else{
     //     cout << "Non - Palindrome" << endl;
     // }
+
+
+    string str1 = "care";
+    string str2 = "rae";
+
+    if(str1.size() != str2.size()){
+        cout << "not an anagram" << endl;
+        return 0;
+    }
+
+    int sum1 = 0;
+    int sum2 = 0;
+
+
+    for(char ch : str1){
+        int c = ch;
+        sum1 += c;
+    }
+    for(char ch : str2){
+        int c = ch;
+        sum2 += c;
+    }
+
+    if(sum1 == sum2){
+        cout << "they could be anagram";
+    }
+    else{
+        cout << "Not Anagram";
+    }
+
 
 
 
