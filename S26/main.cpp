@@ -58,19 +58,37 @@ int main() {
     cin >> str;
 
 
-    string ans = "";
 
-    for(int i=str.size()-1; i>=0; i--){
-        ans = ans + str[i];
-    }
-    cout << ans << endl;
+    int s = 0;
+    int e = str.size()-1;
 
-    if(str == ans){
-        cout << "Palindrome" << endl;
+    // bool isPalindrome = 
+
+    while(s < e){
+        if(str[s] != str[e]){
+            cout << "Non-palindrome";
+        }
+        else{
+            cout << "palindrome";
+        }
+        s++;
+        e--;
     }
-    else{
-        cout << "Non - Palindrome" << endl;
-    }
+
+
+    // string ans = "";
+
+    // for(int i=str.size()-1; i>=0; i--){
+    //     ans = ans + str[i];
+    // }
+    // cout << ans << endl;
+
+    // if(str == ans){
+    //     cout << "Palindrome" << endl;
+    // }
+    // else{
+    //     cout << "Non - Palindrome" << endl;
+    // }
 
 
 
