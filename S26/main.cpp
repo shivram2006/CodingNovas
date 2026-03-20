@@ -9,14 +9,15 @@ void strRev(string str){
         s++;
         e--;
     }
+    cout << str << endl;
 }
 
 
 
 int main() {
 
-    string str = "Hello";
-
+    // string str = "Hello";
+    
     // cout << str[0] << endl;
     // cout << str[1] << endl;
     // cout << str[2] << endl;
@@ -45,9 +46,13 @@ int main() {
     // }
 
     // cout << "The ASCII sum of the given string is : " << ASCIISum << endl;
+    
 
+    string str = "Hello";
+    strRev(str);
 
-    str
+    cout << str << endl;
+
 
 
 
