@@ -34,7 +34,8 @@ int main() {
 
     }
 
-    cout << "The ASCII sum of the given string is : " << ASCIISum << endl;
+    // cout << "The ASCII sum of the given string is : " << ASCIISum << endl;
+
 
 
 
