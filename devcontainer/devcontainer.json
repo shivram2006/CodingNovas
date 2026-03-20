@@ -1,0 +1,9 @@
+{
+  "name": "My Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "extensions": [
+    "ms-vscode.cpptools",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}
