@@ -92,7 +92,7 @@ int main() {
 
 
     string str1 = "care";
-    string str2 = "rae";
+    string str2 = "raee";
 
     if(str1.size() != str2.size()){
         cout << "not an anagram" << endl;
