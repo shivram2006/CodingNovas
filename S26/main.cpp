@@ -48,12 +48,34 @@ int main() {
     // cout << "The ASCII sum of the given string is : " << ASCIISum << endl;
     
 
-    string str = "Hello";
+    // string str = "Hello";
+
     // strRev(str);
 
-    
 
-    cout << str << endl;
+    string str;
+    cout << "Enter the string : ";
+    cin >> str;
+
+
+    string ans = "";
+
+    for(int i=str.size()-1; i>=0; i--){
+        ans = ans + str[i];
+    }
+    cout << ans << endl;
+
+    if(str == ans){
+        cout << "Palindrome" << endl;
+    }
+    else{
+        cout << "Non - Palindrome" << endl;
+    }
+
+
+
+
+    // cout << str << endl;
 
 
 
