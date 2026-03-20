@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void strRev(string str){
+    int s = 0;
+    int e = str.size()-1;
+    while(s < e){
+        swap(str[s], str[e]);
+        s++;
+        e--;
+    }
+}
+
 
 
 int main() {
@@ -25,18 +35,19 @@ int main() {
     //     cout << i << " ";
     // }
 
-    int ASCIISum = 0;
+    // int ASCIISum = 0;
 
-    for(int i=0; i<str.size(); i++){
-        int ch = str[i];
-        // ASCIISum = ASCIISum + ch;
-        ASCIISum += ch;
+    // for(int i=0; i<str.size(); i++){
+    //     int ch = str[i];
+    //     // ASCIISum = ASCIISum + ch;
+    //     ASCIISum += ch;
 
-    }
+    // }
 
     // cout << "The ASCII sum of the given string is : " << ASCIISum << endl;
 
 
+    str
 
 
 
