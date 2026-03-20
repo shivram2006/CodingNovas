@@ -7,7 +7,26 @@ int main() {
 
     string str = "Hello";
 
-    cout << str;
+    // cout << str[0] << endl;
+    // cout << str[1] << endl;
+    // cout << str[2] << endl;
+    // cout << str[3] << endl;
+    // cout << str[4] << endl;
+
+
+    // cout << str.size() << endl;
+
+    // for(int i=0; i<str.size(); i++){
+    //     cout << str[i] << " ";
+    // }
+
+
+    // for(char i : str){
+    //     cout << i << " ";
+    // }
+
+
+    cout << endl;
 
     return 0;
 }
