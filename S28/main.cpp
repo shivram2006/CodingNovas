@@ -1,34 +1,57 @@
 #include <iostream>
 using namespace std;
 
-// Class demonstrating abstraction
+// ================= BANK ACCOUNT CLASS =================
 class BankAccount {
 private:
-    double balance;  // hidden from user
+    double balance;  // Hidden data (user direct access nahi kar sakta)
 
 public:
-    // Constructor to initialize balance
-    BankAccount() {
-        balance = 0;
+    // Constructor (initial balance set karne ke liye)
+    BankAccount(double initialBalance) {
+        balance = initialBalance;
     }
 
-    // Public function to deposit money
+    // Deposit function (money add karne ke liye)
     void deposit(double amount) {
-        balance += amount;
+        if (amount > 0) {
+            balance += amount;
+            cout << "Deposited: " << amount << endl;
+        } else {
+            cout << "Invalid amount!" << endl;
+        }
     }
 
-    // Public function to check balance
+    // Withdraw function (money nikalne ke liye)
+    void withdraw(double amount) {
+        if (amount > balance) {
+            cout << "Insufficient balance!" << endl;
+        } else {
+            balance -= amount;
+            cout << "Withdrawn: " << amount << endl;
+        }
+    }
+
+    // Balance check (read-only access)
     double getBalance() {
         return balance;
     }
 };
 
+// ================= MAIN FUNCTION =================
 int main() {
-    BankAccount user;
 
-    user.deposit(5000);  // user interacts with function only
+    // Real-life scenario: Ek user bank account open karta hai
+    BankAccount user(1000);  // Initial balance = 1000
 
-    cout << "Your Balance: " << user.getBalance();
+    // User paise deposit karta hai
+    user.deposit(500);
+
+    // User paise withdraw karta hai
+    user.withdraw(300);
+
+    // Final balance check karta hai
+    cout << "Final Balance: " << user.getBalance() << endl;
 
     return 0;
 }
